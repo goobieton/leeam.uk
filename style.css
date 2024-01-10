@@ -4,18 +4,26 @@
     --primary: #053076;
     --secondary: #7d7de3;
     --accent: #2121ab;
+    --bgaccent: #c6c8dc;
   }
   :root[data-theme="dark"] {
     --text: #eaeaf1;
-    --background: #0a0c10;
+    --background: #1e1e2e;
     --primary: #89b5fa;
     --secondary: #1c1c82;
     --accent: #5454de;
+    --bgaccent: #232539;
   }
+  
   
 
 
-
+.toggle-container {
+    position: fixed;
+    top: 20px; /* Adjust the top value as needed */
+    right: 20px; /* Adjust the right value as needed */
+    z-index: 1000;
+}
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @keyframes start {
     0% {
