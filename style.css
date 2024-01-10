@@ -1,11 +1,18 @@
-:root {
+:root[data-theme="light"] {
+    --text: #0e0e15;
+    --background: #eff1f5;
+    --primary: #053076;
+    --secondary: #7d7de3;
+    --accent: #2121ab;
+  }
+  :root[data-theme="dark"] {
     --text: #eaeaf1;
-    --background: #1e1e2e;
+    --background: #0a0c10;
     --primary: #89b5fa;
-    --secondary: #1d1d95;
-    --accent: #1919eb;
-    --bgaccent: #232539;
-}
+    --secondary: #1c1c82;
+    --accent: #5454de;
+  }
+  
 
 
 
@@ -28,11 +35,14 @@
 }
 body {
     background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #hello {
@@ -46,7 +56,7 @@ body {
 }
 .box {
     opacity: 0;
-    width: 300px;
+    width: 200px;
     height: 300px;
     border-radius: 10px;
     background: var(--bgaccent);
@@ -55,6 +65,27 @@ body {
     animation-duration: 1s;
     animation-delay: 9s;
     animation-fill-mode: both;
-    position: absolute; /* Add this */
+    position: absolute;
+    left: 15%; /* Adjust this value to set the desired distance from the left */
+    top: 60px;
+    padding-left: 30px;
 }
+.titlebox {
+    opacity: 0;
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    background: var(--bgaccent);
+    border: 1px solid #313244;
+    animation-name: end;
+    animation-duration: 1s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    position: absolute;
+    left: 32.5%; /* Adjust this value to set the desired distance from the left */
+    top: 60px;
+    padding-left: 30px;
+}
+
+
 
