@@ -1,0 +1,60 @@
+:root {
+    --text: #eaeaf1;
+    --background: #1e1e2e;
+    --primary: #89b5fa;
+    --secondary: #1d1d95;
+    --accent: #1919eb;
+    --bgaccent: #232539;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@keyframes start {
+    0% {
+        opacity: 100;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes end {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+body {
+    background-color: var(--background);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hello {
+    color: var(--text);
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px;
+    animation-name: start;
+    animation-duration: 1s;
+    animation-delay: 8.5s;
+    animation-fill-mode: forwards;
+}
+.box {
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: var(--bgaccent);
+    border: 1px solid #313244;
+    animation-name: end;
+    animation-duration: 1s;
+    animation-delay: 9s;
+    animation-fill-mode: both;
+    position: absolute; /* Add this */
+}
+
