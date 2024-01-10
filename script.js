@@ -1,22 +1,20 @@
-const modeToggle = document.getElementById("modeToggle");
-const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const toggleCheckbox = document.querySelector(".toggle-checkbox");
 
-if (isDarkMode) {
-    // Dark mode is preferred by the user or set as default
-    document.documentElement.setAttribute("data-theme", "dark");
-    modeToggle.checked = true; // Set the checkbox to checked
-} else {
-    // Light mode is preferred by the user
-    document.documentElement.setAttribute("data-theme", "light");
-    modeToggle.checked = false; // Set the checkbox to unchecked
-}
+// Function to toggle the theme based on the checkbox state
+function toggleTheme() {
+    const isDarkMode = toggleCheckbox.checked;
 
-modeToggle.addEventListener("change", () => {
-    if (modeToggle.checked) {
+    if (isDarkMode) {
         // Dark mode
         document.documentElement.setAttribute("data-theme", "dark");
     } else {
         // Light mode
         document.documentElement.setAttribute("data-theme", "light");
     }
-});
+}
+
+// Initial state based on the checkbox
+toggleTheme();
+
+// Listen for changes in the checkbox state
+toggleCheckbox.addEventListener("change", toggleTheme);
