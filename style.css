@@ -140,7 +140,7 @@ body {
     font-size: 30px;
     animation-name: start;
     animation-duration: 1s;
-    animation-delay: 8.5s;
+    animation-delay: 7.5s;
     animation-fill-mode: forwards;
 }
 .box {
@@ -152,7 +152,7 @@ body {
     border: 1px solid #313244;
     animation-name: end;
     animation-duration: 1s;
-    animation-delay: 9s;
+    animation-delay: 8s;
     animation-fill-mode: both;
     position: absolute;
     left: 15%;
@@ -168,7 +168,7 @@ body {
     border: 1px solid #313244;
     animation-name: end;
     animation-duration: 1s;
-    animation-delay: 9s;
+    animation-delay: 8s;
     animation-fill-mode: both;
     position: absolute;
     left: 32.5%;
