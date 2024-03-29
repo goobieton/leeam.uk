@@ -11,9 +11,6 @@ const cb = function (entries) {
 const io = new IntersectionObserver(cb);
 io.observe(appear);
 
-
-
-
 const items = document.querySelectorAll('.appear2');
 
 const active = function (entries) {
@@ -29,7 +26,6 @@ const io2 = new IntersectionObserver(active);
 for (let i = 0; i < items.length; i++) {if (window.CP.shouldStopExecution(0)) break;
   io2.observe(items[i]);
 }window.CP.exitedLoop(0);
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const appear3 = document.querySelector('.appear3');
@@ -48,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Element with class 'appear3' not found.");
     }
 });
-
-
 
 const io3 = new IntersectionObserver(cb3);
 io3.observe(appear3);
