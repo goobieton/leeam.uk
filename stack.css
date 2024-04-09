@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-    font-family: 'Inter','Poppins',sans-serif;
-    color: white;
+  font-family: "Inter", "Poppins", sans-serif;
+  color: white;
 }
 
 .tooltip {
-opacity: 0;
-transform-origin: 50% 50% 0px;
-transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
-transform: translateX(-10px); /* Start position for the slide out effect */
+  opacity: 0;
+  transform-origin: 50% 50% 0px;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
+  transform: translateX(-10px); /* Start position for the slide out effect */
 }
 
 .icon:hover .tooltip {
-    opacity: 1;
-    pointer-events: auto; /* Enable pointer events on the tooltip */
-    transform: translateX(0); /* Slide out effect */
+  opacity: 1;
+  pointer-events: auto; /* Enable pointer events on the tooltip */
+  transform: translateX(0); /* Slide out effect */
 }
 
 .time {
-    font-family: 'DM Mono' ,sans-serif;
+  font-family: "DM Mono", sans-serif;
 }
 circle.fill-green {
   fill: #2ebe8a; /* Add this line */
@@ -52,28 +52,35 @@ circle {
 }
 
 .tooltip2 {
-    opacity: 0;
-    transform-origin: 50% 50% 0px;
-    transition: opacity 0.3s ease, transform 0.3s ease; 
-    transform: translateY(-10px); 
-    pointer-events: none; 
+  opacity: 0;
+  transform-origin: 50% 50% 0px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+  pointer-events: none;
 }
 
 .link:hover .tooltip2 {
-    opacity: 1;
-    pointer-events: auto; 
-    transform: translateY(0); 
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
-.about, .work {
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0em;
-    line-height: 1.5em;
+.about,
+.work {
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0em;
+  line-height: 1.5em;
 }
 
 .img img {
-    display: block; width: 100%; height: 100%; border-radius: inherit; object-position: center center; object-fit: contain; image-rendering: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 /* animation */
@@ -82,15 +89,15 @@ circle {
   transition: all 0.8s;
   opacity: 0;
   -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  transform: translateY(40px);
 }
 
 .appear.inview {
   opacity: 1;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .appear2 {
@@ -98,38 +105,38 @@ circle {
   transition: all 0.8s;
   opacity: 0;
   -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .appear2.inview2 {
   opacity: 1;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 .appear2.inview2:nth-child(1) {
   -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .appear2.inview2:nth-child(2) {
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .appear2.inview2:nth-child(3) {
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .appear2.inview2:nth-child(4) {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .appear2.inview2:nth-child(5) {
   -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .appear3 {
@@ -137,17 +144,16 @@ circle {
   transition: all 0.8s;
   opacity: 0;
   -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  transform: translateY(40px);
 }
 
 .appear3.inview {
   opacity: 1;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-
 
 /*=== Trigger  ===*/
 .animate {
@@ -483,23 +489,23 @@ circle {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 2vh;
+  width: 10px;
+  border-radius: 2vh;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f100;
-    border-radius: 2vh;
+  background: #f1f1f100;
+  border-radius: 2vh;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    border-radius: 1vh;
-    background: #424242;
+  border-radius: 1vh;
+  background: #424242;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }

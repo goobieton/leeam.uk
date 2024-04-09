@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-family: "Inter", "Poppins", sans-serif;
   color: white;
 }
 
 .tooltip {
+  z-index: 100;
   opacity: 0;
   transform-origin: 50% 50% 0px;
   transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
@@ -20,6 +20,15 @@ body {
 .time {
   font-family: "DM Mono", sans-serif;
 }
+circle.fill-green {
+  fill: #2ebe8a; /* Add this line */
+}
+
+circle {
+  stroke: #2ebe8a;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
 
 .pulse {
   fill-opacity: 0;
@@ -28,12 +37,7 @@ body {
   animation-name: pulse;
   animation-iteration-count: infinite;
 }
-.fill-green {
-  fill: #2ebe8a; /* Green color */
-}
-.fill-grey {
-  fill: #a0aec0; /* Grey color */
-}
+
 @keyframes pulse {
   from {
     stroke-width: 3px;
@@ -46,23 +50,6 @@ body {
     transform: scale(2);
   }
 }
-.tooltip2 {
-  transform: translateX(-50%) translateY(-10px); /* Center horizontally and offset slightly */
-  z-index: 2; /* Ensure the tooltip is above other elements */
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
-}
-
-.link:hover .tooltip2 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0); /* Show tooltip on hover */
-}
-.link {
-  position: relative; /* Establishes a new stacking context */
-  z-index: 1; /* Ensure the parent container is above other elements */
-}
 
 .about,
 .work {
@@ -72,18 +59,14 @@ body {
   line-height: 1.5em;
 }
 
-.img {
-  overflow: hidden;
-  transition: ease-in-out 0.3s;
-}
-
 .img img {
-  transition: ease-in-out 0.3s;
-}
-
-.work-1:hover .img img {
-  transform: scale(1.1);
-  transition: ease-in-out 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: contain;
+  image-rendering: auto;
 }
 
 /* animation */
@@ -368,6 +351,18 @@ body {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+.link-with-button {
+  color: rgb(98, 98, 255);
+  text-decoration: underline;
+  padding-right: 15px;
+  padding-top: 15px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" fill="%23ffffff"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 12px;
+  display: inline-block;
 }
 
 /*=== FADE IN UP Big ===*/
