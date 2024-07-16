@@ -171,21 +171,21 @@ circle {
 }
 
 .two {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.three {
   -webkit-animation-delay: 1.5s;
   -moz-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 
-.three {
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  animation-delay: 2.5s;
-}
-
 .four {
-  -webkit-animation-delay: 3.5s;
-  -moz-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .five {
