@@ -6,7 +6,10 @@ function fetchAndDisplayTime() {
         .then(data => {
             const datetime = data.datetime;
             const userDate = new Date(datetime);
-            const formattedTime = userDate.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
+            const formattedTime = userDate.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
             document.getElementById('user-time').innerText = formattedTime;
         })
         .catch(error => {

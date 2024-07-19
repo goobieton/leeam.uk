@@ -7,21 +7,22 @@ body {
   z-index: 100;
   opacity: 0;
   transform-origin: 50% 50% 0px;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition */
-  transform: translateX(-10px); /* Start position for the slide out effect */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-10px);
 }
 
 .icon:hover .tooltip {
   opacity: 1;
-  pointer-events: auto; /* Enable pointer events on the tooltip */
-  transform: translateX(0); /* Slide out effect */
+  pointer-events: auto;
+  transform: translateX(0);
 }
 
 .time {
   font-family: "DM Mono", sans-serif;
 }
+
 circle.fill-green {
-  fill: #2ebe8a; /* Add this line */
+  fill: #2ebe8a;
 }
 
 circle {
@@ -44,6 +45,7 @@ circle {
     stroke-opacity: 1;
     transform: scale(0.3);
   }
+
   to {
     stroke-width: 0;
     stroke-opacity: 0;
@@ -214,6 +216,7 @@ circle {
     transform: none;
   }
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -238,24 +241,28 @@ circle {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -277,6 +284,7 @@ circle {
     transform: none;
   }
 }
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -310,6 +318,7 @@ circle {
     transform: none;
   }
 }
+
 @keyframes fadeInRight {
   from {
     opacity: 0;
@@ -339,6 +348,7 @@ circle {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -348,6 +358,7 @@ circle {
     opacity: 1;
   }
 }
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -370,24 +381,28 @@ circle {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
 }
+
 @-webkit-keyframes fadeInUpBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInUpBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -400,24 +415,28 @@ circle {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
+
 @-webkit-keyframes fadeInDownBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInDownBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -430,24 +449,28 @@ circle {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
 }
+
 @-webkit-keyframes fadeInLeftBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInLeftBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -460,24 +483,28 @@ circle {
   -webkit-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
 }
+
 @-webkit-keyframes fadeInRightBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
